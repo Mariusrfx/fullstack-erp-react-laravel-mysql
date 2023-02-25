@@ -2,6 +2,7 @@ import React, { createRef, useRef,useState } from 'react'
 import { Link } from "react-router-dom";
 import axiosClient from '../axiosClient';
 import { useStateContext } from '../contexts/ContextProvider';
+import style from './SignUp.css'
 
 function SignUp() {
 
@@ -40,7 +41,7 @@ function SignUp() {
   };
 
   return (
-    <div className="login-signup-form animated fadeInDown">
+    <div className="signup-form animated fadeInDown">
     <div className="form">
         <form onSubmit={onSubmit}>
             <h1 className="title">Signup for free</h1>
